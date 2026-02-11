@@ -1,0 +1,18 @@
+body /* Fond de page en red */
+{background:rgb(128, 112, 112);}    
+p /* Paramètres des paragraphes */
+{
+    color: black; /* Le texte sera noir*/
+    text-align: justify;/* Mode alignement justifié*/
+    font-size: 20 px; /*Taille du texte de 20 pixels */
+    font-style: italic;/*En italic */
+}
+a /* Paramètres des liens*/
+{ 
+    text-decoration: underline; /* Texte souligné */
+}
+h1/*Paramètres du titre de niveau 1*/
+{
+   color: rgb(172, 35, 35);/*Le texte sera en rouge */
+    text-decoration: underline;/*Texte souligné */
+}
