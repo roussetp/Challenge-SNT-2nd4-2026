@@ -1,0 +1,101 @@
+<html>
+<!--GUILLAUME-->
+<!--
+1/2 pts justesse code HTML
+3/4 pts richesse et pertinence du contenu
+6/8 pts richesse du code HTML (puces / images / liens etc.)
+
+2/2 pts justesse code CSS
+2/4 pts richesse code CSS
+14/20 Bon Sujet. Pour le CSS, vous auriez dû faire simple. 
+Un simple hover aurait fait la même chose sans script. 
+Ok pour le trainé de souris. Des erreurs dans le HTML
+-->
+<head>
+    <title>Page d'accueil</title>
+    <link rel="icon" type="image/png" href="icone.jpg" />
+    <link href="css.css" rel="stylesheet">
+
+    <style>
+        body{cursor:default}
+
+        .click-light{
+            position:fixed;
+            width:40px;
+            height:40px;
+            background:rgba(101, 220, 250, 0.6);
+            border-radius:50%;
+            pointer-events:none;
+            transform:translate(-50%,-50%);
+            box-shadow:0 0 20px 10px rgb(255, 255, 255);
+            animation:fade 0.4s ease-out forwards;
+        }
+
+        @keyframes fade{
+            to{opacity:0; transform:translate(-50%,-50%) scale(2);}
+        }
+
+        /* ---- Traînée de souris (simple) ---- */
+        .trail{
+            position:fixed;
+            width:20px;
+            height:20px;
+            background:rgba(246, 247, 245, 0.6);
+            border-radius:50%;
+            pointer-events:none;
+            transform:translate(-50%,-50%);
+            opacity:0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><strong>Pourquoi la SNT est-elle dangereuse pour les élèves ?</strong></h1>
+    <ul>
+        <h1>
+            <li> Sommaire :</li>
+        </h1>
+    </ul>
+    <h2>
+        <p><a href="dangers.html">1. Les 10 principaux dangers de l'exposition à la SNT</a></p>
+        <p><a href="stat.html">2. les statistiques</a></p>
+        <p><a href="temoin.html">3. Les témoignages</a></p>
+    </h2>
+
+    <img src="image index 1.png" width="400">
+    <img src="image index 2.jpg" width="711">
+
+    <h3>
+        <em>
+            <p>-Deux docteurs Herasmus chercheurs spécialistes sur les dangers de la SNT </p>
+            <p>-Palmares BAC+12!! /diplôme local de la science naturelle </p>
+            <p>-Fondateurs du projet anti-SNT </p>
+        </em>
+    </h3>
+
+    <script>
+        /* Effet clic (inchangé) */
+        document.addEventListener("click", e=>{
+            const l=document.createElement("div");
+            l.className="click-light";
+            l.style.left=e.clientX+"px";
+            l.style.top=e.clientY+"px";
+            document.body.appendChild(l);
+            setTimeout(()=>l.remove(),400);
+        });
+
+        /* Traînée de souris (simple) */
+        document.addEventListener("mousemove", e=>{
+            const t=document.createElement("div");
+            t.className="trail";
+            t.style.left=e.clientX+"px";
+            t.style.top=e.clientY+"px";
+            document.body.appendChild(t);
+            setTimeout(()=>t.remove(),200);
+        });
+    </script>
+
+</body>
+</html>
+

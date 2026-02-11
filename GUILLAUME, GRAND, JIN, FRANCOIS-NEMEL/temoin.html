@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!--weston jin-->
+<!--
+1/2 pts justesse code HTML
+3/4 pts richesse et pertinence du contenu
+6/8 pts richesse du code HTML (puces / images / liens etc.)
+
+2/2 pts justesse code CSS
+1/4 pts richesse code CSS
+13/20 Un peu léger. Erreur dans le HTML. Pour le CSS vous auriez dû faire simple et personnalisé. 
+Un simple hover aurait fait la même chose sans script
+-->
+<head>
+    <title>Témoignages</title>
+    <link rel="icon" type="image/png" href="icone.jpg" />
+    <link href="css.css" rel="stylesheet">
+</head>
+
+<body>
+<p><h2><a href="index.html">Accueil </a></h2></p>    
+    <style>
+        body{cursor:default}
+
+        .click-light{
+            position:fixed;
+            width:40px;
+            height:40px;
+            background:rgba(101, 220, 250, 0.6);
+            border-radius:50%;
+            pointer-events:none;
+            transform:translate(-50%,-50%);
+            box-shadow:0 0 20px 10px rgb(255, 255, 255);
+            animation:fade 0.4s ease-out forwards;
+        }
+
+        @keyframes fade{
+            to{opacity:0; transform:translate(-50%,-50%) scale(2);}
+            
+        }
+    </style>
+    <ul>
+        <h1>
+            <li>QUELQUES TÉMOIGNAGES: COMMENT ÉTAIT VOTRE EXPERIENCE DANS LE DOMAINE DE LA SNT ?</li>
+        </h1>
+    </ul>
+    <h2>
+        <em>
+            <p>« Après 1h de SNT, j’ai commencé à parler en "balises" lv c'etait harrrrrr. »</p>
+        </em>
+        <p>— Léo</p>
+
+        <em>
+            <p>« Je n'imaginais pas le Python comme ça. Mais ça reste acceptable. »</p>
+        </em>
+        <p>— Louna</p>
+
+        <em>
+            <p>«Sortez moi de là ! Ce sont tous des fous ! Ils sont pas normaux je dois me cacher!!! »</p>
+        </em>
+        <p>— Djebril</p>
+
+        <em>
+            <p>« J’ai corrigé un bug… et 3 autres sont apparus cela n'etait guère évidant. En outre, un jeune homme ne
+                cessait de nous prendre pour des individus mentalement derangés »</p>
+        </em>
+        <p>— Dahlia</p>
+
+        <em>
+            <p>« J'ai eu la même coupe que mon prof de math après 3 jours de SNT.»</p>
+        </em>
+        <p>— Keïzan</p>
+    </h2>
+
+    <img src="temoignages.jpg" width="500" />
+    <img src="images.jpg" width="256" />
+    <script>
+        document.addEventListener("click", e=>{
+            const l=document.createElement("div");
+            l.className="click-light";
+            l.style.left=e.clientX+"px";
+            l.style.top=e.clientY+"px";
+            document.body.appendChild(l);
+            setTimeout(()=>l.remove(),400);
+        });
+    </script>
+</body>
+
+</html>

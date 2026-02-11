@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Factory - Accueil</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+            background: url('data:image/png;base64,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') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            border-bottom: 2px solid red;
+        }
+
+        .logo {
+            font-family: 'Anton', sans-serif;
+            font-size: 32px;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        /* CARTE PRINCIPALE */
+        .carte {
+            margin-top: 180px;
+            width: 480px;
+            background: rgba(0, 0, 0, 0.75);
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+        }
+
+        .carte:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(255, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 42px;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .btn {
+    padding: 10px 20px;
+    background-color: #e63946;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c92d3a;
+    </style>
+    
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MMA Factory</div>    
+
+    <nav>
+        <a href="MMA MILISAVLJEVIC.html">Accueil</a>
+        <a href="index.html" class="btn">Maison de retraite</a>
+    </nav>
+</header>
+
+<div class="carte" onclick="window.location='combats MILISAVLJEVIC.html'">
+    <h1>MMA ZONE</h1>
+    <p>Bienvenue sur la page dédiée au MMA, aux combats, aux KO et aux champions.</p>
+    <p><strong>🔥 Clique ici pour voir les combats à venir 🔥</strong></p>
+</div>
+
+</body>
+</html>
+<!-- CARRE 2 : CLASSEMENT (MÊME STYLE) -->
+<div class="carte" onclick="window.location='classements MILISAVLJEVIC.html'">
+    <h1>CLASSEMENT</h1>
+    <p>Découvre les classements officiels et les top fighters de chaque catégorie.</p>
+    <p><strong>🏆 Clique ici pour voir les classements 🏆</strong></p>
+</div>
+<div class="carte" onclick="window.location='avion.html'">
+    <h1>Les boing rigolos</h1>
+    <p>Découvre les avions les plus rigolos du monde </p>
+    <p><strong>🏆 Clique ici pour voir les avions 🏆</strong></p>
+</div>
+
+
+</body>
+</html>

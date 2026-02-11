@@ -1,0 +1,91 @@
+<html>
+<!--FRANCOIS NEMEL-->
+<!--
+1/2 pts justesse code HTML
+4/4 pts richesse et pertinence du contenu
+6/8 pts richesse du code HTML (puces / images / liens etc.)
+
+2/2 pts justesse code CSS
+1/4 pts richesse code CSS
+14/20 Contenu bien sympa. Des erreurs dans le HTML.
+ Pour le CSS, vous auriez dû faire simple. 
+Un simple hover aurait fait la même chose sans script
+-->
+<Head>
+    <title>Statistiques</title>
+    <link rel="icon" type="image/png" href="icone.jpg" />
+    <link href="css.css" rel="stylesheet">
+    <style>
+        body{cursor:default}
+
+        .click-light{
+            position:fixed;
+            width:40px;
+            height:40px;
+            background:rgba(101, 220, 250, 0.6);
+            border-radius:50%;
+            pointer-events:none;
+            transform:translate(-50%,-50%);
+            box-shadow:0 0 20px 10px rgb(255, 255, 255);
+            animation:fade 0.4s ease-out forwards;
+        }
+
+        @keyframes fade{
+            to{opacity:0; transform:translate(-50%,-50%) scale(2);}
+        }
+    </style>
+</Head>
+
+<body>
+    <p><h2><a href="index.html">Accueil </a></h2></p>
+    <ul>
+        <h1>
+            <li> DES STATS VREUUUUMENT</li>
+        </h1>
+    </ul>
+    <h2>
+        <p1>Ces stats ont été testées, aprouvées et rendues publiques par de nombreux scientifiques, boulangers et
+            diplomés de
+            l'université de Waterlo Spé Ingénieur.</p1>
+    </h2>
+    <img src="stat 1.jfif" width="1000" />
+    <BR> <BR>
+    <h1>
+        <p1>Voici <strong><U>4 statistiques totalement crazyyyy</U></strong> qui prouvent que la SNT est un vrai danger
+            pour l'humanité toute entière :</p1>
+    </h1>
+    <h2>
+        <ol>
+            <br><br><br><br>
+            <li>La différence entre une personne <strong>AVANT</strong> d'avoir SNT et <strong>APRES</strong></li>
+            <br> <img src="stat 2.jfif" width="500" />
+            <br> <br><br>
+            <li>
+                <p2>Les ingénieurs seront remplacés d'ici 20<strong>67</strong></p2>
+            </li>
+            <br><img src="stat 3.jfif" width="500" />
+            <br><br><br>
+            <li>
+                <p3>La plupart des gens qui ont + de 15 de moyenne en SNT lui ressemblent</p3>
+            </li>
+            <br> <img src="stat 4.jfif" width="450" />
+            <br><br>
+            <li>
+                <p4>80% des ingenieurs deviennent des pythons intellos après 1 année d'étude supérieure</p4>
+            </li>
+            <br> <img src="stat 5.jpg" width="500" />
+        </ol>
+    </h2>
+    <script>
+        document.addEventListener("click", e=>{
+            const l=document.createElement("div");
+            l.className="click-light";
+            l.style.left=e.clientX+"px";
+            l.style.top=e.clientY+"px";
+            document.body.appendChild(l);
+            setTimeout(()=>l.remove(),400);
+        });
+    </script>
+</body>
+
+</html>

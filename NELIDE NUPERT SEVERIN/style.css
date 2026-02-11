@@ -1,0 +1,91 @@
+/*NELIDE,NUPERT,SEVERIN*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Baskerville";
+    background-color: #f2f2f2;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: #111111;
+    padding: 15px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.image-box {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 6px;
+    background: #ddd;
+    border: 1px solid #ccc;
+}
+
+.img-caption {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}

@@ -1,0 +1,102 @@
+<html>
+<!--GRAND-->
+<!--
+1/2 pts justesse code HTML
+4/4 pts richesse et pertinence du contenu
+6/8 pts richesse du code HTML (puces / images / liens etc.)
+
+2/2 pts justesse code CSS
+1/4 pts richesse code CSS
+14/20 Bon Sujet Pour le CSS, vous auriez dû faire simple. 
+Un simple hover aurait fait la même chose sans script
+-->
+
+
+<head>
+	<title>Dangers</title>
+	<link rel="icon" type="image/png" href="icone.jpg" />
+	<link href="css.css" rel="stylesheet">
+	<style>
+		body {
+			cursor: default
+		}
+
+		.click-light {
+			position: fixed;
+			width: 40px;
+			height: 40px;
+			background: rgba(101, 220, 250, 0.6);
+			border-radius: 50%;
+			pointer-events: none;
+			transform: translate(-50%, -50%);
+			box-shadow: 0 0 20px 10px rgb(255, 255, 255);
+			animation: fade 0.4s ease-out forwards;
+		}
+
+		@keyframes fade {
+			to {
+				opacity: 0;
+				transform: translate(-50%, -50%) scale(2);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<p>
+	<h2><a href="index.html">Accueil </a></h2>
+	</p>
+	<h1>
+		<ul>
+			<li>⚠️LES 10 DANGERS PRINCIPAUX DE L'EXPOSITION À LA SNT⚠️</li>
+		</ul>
+	</h1>
+	<h2>
+		<ol>
+			<p>
+				<li>Après 1h de SNT, tu commences à parler en "balises".</li>
+			</p>
+			<p>
+				<li>Tu penses que Python est un serpent qui sait coder.</li>
+			</p>
+			<p>
+				<li>Tu passes plus de temps à chercher une virgule qu'à coder une page complète.</li>
+			<p>
+				<li>Tu coriges un bug et 3 nouveaux apparaissent.</li>
+			<p>
+				<li>Après une session de 3 heures de SNT, tu te demandes si tu as encore un cerveau ou si tu es devenu
+					un
+					robot.</li>
+			<p>
+				<li>Tu passes plus de temps à comprendre pourquoi ton code ne fonctionne pas qu’à réellement coder.
+				</li>
+			<p>
+				<li>Tu passes des heures à essayer de faire en sorte que ton texte soit centré… mais il reste à
+					gauche.
+				</li>
+			<p>
+				<li>Tu vois "404 Not Found" et tu réalises que même le web ne comprend plus où tu vas.</li>
+			<p>
+				<li>Tu copies un bout de code trouvé sur Internet, et ton PC commence à faire des bruits bizarres.
+				</li>
+			<p>
+				<li>Tu vois ton prof arriver, et tu réalises que tu n’as toujours pas compris comment fonctionne ton
+					projet.</li>
+		</ol>
+	</h2>
+	<p>
+		<img src="panneau danger.jpg" width="200" />
+	<p>
+		<script>
+			document.addEventListener("click", e => {
+				const l = document.createElement("div");
+				l.className = "click-light";
+				l.style.left = e.clientX + "px";
+				l.style.top = e.clientY + "px";
+				document.body.appendChild(l);
+				setTimeout(() => l.remove(), 400);
+			});
+		</script>
+</body>
+
+</html>

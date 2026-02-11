@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--
+/2 pts justesse code HTML
+/4 pts richesse et pertinence du contenu
+/8 pts richesse du code HTML (puces / images / liens etc.)
+
+/2 pts justesse code CSS
+/4 pts richesse code CSS
+/20 
+-->
+<!DOCT
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMA Facrtory - Classements UFC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Oswald', sans-serif;
+      background: #111;
+      color: #eee;
+      min-height: 100vh;
+    }
+    header {
+      width: 100%;
+      height: 80px;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      box-sizing: border-box;
+      border-bottom: 2px solid red;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .logo {
+      font-family: 'Anton', sans-serif;
+      font-size: 32px;
+      color: red;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: red;
+    }
+    main {
+      padding: 120px 20px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 36px;
+      color: red;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .division {
+      margin-bottom: 40px;
+    }
+    .division h2 {
+      font-size: 28px;
+      color: #f33;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #444;
+      text-align: left;
+    }
+    th {
+      background: #222;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MMA Factory</div>
+    <nav>
+      <a href="MMA MILISAVLJEVIC.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Classements UFC — Hommes</h1>
+
+    <!-- Exemple de catégorie : Flyweight -->
+    <div class="division">
+      <h2>Poids mouche (Flyweight – jusqu'à 56,7 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Joshua Van</td></tr>
+        <tr><td>1</td><td>Alexandre Pantoja</td></tr>
+        <tr><td>2</td><td>Manel Kape</td></tr>
+        <!-- etc. -->
+      </table>
+    </div>
+
+    <!-- Exemple de catégorie : Bantamweight -->
+    <div class="division">
+      <h2>Poids coq (Bantamweight – jusqu'à 61,2 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Petr Yan</td></tr>
+        <tr><td>1</td><td>Merab Dvalishvili</td></tr>
+        <tr><td>2</td><td>Umar Nurmagomedov</td></tr>
+      </table>
+    </div>
+
+    <!-- Exemple de catégorie : Featherweight -->
+    <div class="division">
+      <h2>Poids plume (Featherweight – jusqu'à 65,8 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Alexander Volkanovski</td></tr>
+        <tr><td>1</td><td>movsar evloev</td></tr>
+        <tr><td>2</td><td>diego lopes</td></tr>
+      </table>
+    </div>
+	
+	<div class="division">
+      <h2>Poids léger (léger– jusqu'à 77,1 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Ilia Topuria</td></tr>
+        <tr><td>1</td><td>Arman Tsarukyan</td></tr>
+        <tr><td>2</td><td>Charles oliviera</td></tr>
+      </table>
+    </div>
+	
+	<!-- Exemple de catégorie : welterweight -->
+    <div class="division">
+      <h2>Poids welter (welterweight– jusqu'à 77,1 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Islam Makhachev </td></tr>
+        <tr><td>1</td><td>Jack Della Maddalena</td></tr>
+        <tr><td>2</td><td>Shavkat Rakhmonov</td></tr>
+      </table>
+    </div>
+	
+	
+	<!-- Exemple de catégorie : middleweight-->
+    <div class="division">
+      <h2>Poids moyen (middleweight – jusqu'à 83,9 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Khamzat Chimaev</td></tr>
+        <tr><td>1</td><td>Dricus du plessis </td></tr>
+        <tr><td>2</td><td>Nassourdine imavov</td></tr>
+      </table>
+    </div>
+	
+	<!-- Exemple de catégorie : light heavyweight-->
+    <div class="division">
+      <h2>Poids lourd-léger (light heavyweight – jusqu'à 93,0 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Alex Pereira</td></tr>
+        <tr><td>1</td><td>Jiri Prochazka </td></tr>
+        <tr><td>2</td><td>Magomed Ankalaev</td></tr>
+      </table>
+    </div>
+	
+	<!-- Exemple de catégorie :  heavyweight-->
+    <div class="division">
+      <h2>Poids lourd (heavyweight – jusqu'à 120,0 kg)</h2>
+      <table>
+        <tr><th>Rang</th><th>Combattant</th></tr>
+        <tr><td>Champion</td><td>Tom Aspinall</td></tr>
+        <tr><td>1</td><td>Ciryl Gane</td></tr>
+        <tr><td>2</td><td>Aexander Volkov</td></tr>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>

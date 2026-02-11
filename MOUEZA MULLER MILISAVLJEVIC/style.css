@@ -1,0 +1,29 @@
+/* MOUEZA*/
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site avec fond d'écran</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIwzlsaXKs_kiWVG6tSuC1C-SQUEyteueGdQ&s");
+            background-size: cover;      /* l’image couvre tout l’écran */
+            background-position: center; /* centré */
+            background-repeat: no-repeat;/* pas de répétition */
+            font-family: Arial, sans-serif;
+            color: white;               /* texte lisible par dessus */
+            text-shadow: 0 0 5px black; /* optionnel, renforce la lisibilité */
+        }
+
+        .contenu {
+            padding: 40px;
+            font-size: 26px;
+    
+        }
